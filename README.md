@@ -18,7 +18,5 @@ Gateways:
 math.js - [https://mathjs.org/](https://mathjs.org/)
 ## Licenses
 1. This software is licensed under MIT license.
-2. math.js
-
-Copyright (C) 2013-2023 Jos de Jong wjosdejong@gmail.com
+2. math.js - Copyright (C) 2013-2023 Jos de Jong wjosdejong@gmail.com.
 Licensed under the Apache License, Version 2.0 (text of the license in 'docs' folder).
