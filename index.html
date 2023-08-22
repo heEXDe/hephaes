@@ -1,0 +1,191 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>In One Line</title>
+  <style>
+    body {
+        background-color: darkslategray;
+        max-width: 100%;
+        font-family: "Mono";
+        color: rgb(255, 255, 255);
+        text-align:center
+      }
+    div.center {text-align:center;}
+    h1   {font-family: "Mono"; color: rgb(255, 255, 255); text-align:center}
+    h2   {font-family: "Mono";color: rgb(255, 255, 255); text-align:center}
+    h3   {font-family: "Mono";color: rgb(255, 255, 255); text-align:center}
+    p    {font-family: "Mono";color: rgb(255, 255, 255); text-align:center}
+    p.c2    {font-family: "Mono";color: rgb(255, 255, 255); }
+    .instBtn {
+      background-color: rgb(100, 100, 100);
+      border: none;
+      color: white; 
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 30%;}
+    .instBtn:hover {background-color: rgb(75, 75, 75);}
+    .bGo {
+      background-color: rgb(100, 100, 100);
+      border: none;
+      color: white; 
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 10%;}
+    .bGo:hover {background-color: rgb(75, 75, 75);}
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    th, td {
+      padding: 15px;
+      border: 1px solid white;
+    }
+    #infoTb {
+      color: white;
+      text-align: center;
+      border: 1px solid white;
+    }
+    footer {
+        display:flex;
+        justify-content: center;
+        font-family: "Mono";
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 200px;
+      }
+    input {
+      width: 70%;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-align: center;
+      background-color: gray;
+      color: white;
+    }
+    ::placeholder {
+      text-align:center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <div id="div_main" class="center">
+      <h1>In One Line</h1>
+      <p id="p1">multitool - in a single line of text</p>
+      <hr>
+    </div>
+      <div id="div_1" class="center">
+        <input id="the-text" name="the-text" type="text" placeholder="You question / command here ...">
+        <br>
+        <button class="bGo" id="btnGo">Go</button>
+        <p id="p2"></p>
+        <h3 id="howToUseIt">How to use it:</h3>
+        <table id="infoTb" class="center">
+          <tr><td rowspan="2">Book</td><td>example: </td><td>book lord of the rings</td></tr>
+          <tr><td>to start searching for a book: </td><td>book</td></tr>
+          <tr><td rowspan="11">Mathematics</td><td>example: </td><td>= 2*3.12 + 11.5/1.34</td></tr>
+          <tr><td>to start with mathematics: </td><td>=</td></tr>
+          <tr><td>addition: </td><td>+</td></tr>
+          <tr><td>substraction: </td><td>-</td></tr>
+          <tr><td>multiplication: </td><td>*</td></tr>
+          <tr><td>division: </td><td>/</td></tr>
+          <tr><td>exponentiation: </td><td>^</td></tr>
+          <tr><td>n-th root: </td><td>^(1/n)</td></tr>
+          <tr><td>logarithm: </td><td>log(x) - natural log.<br>loga(b) - of 'b' to base 'a'</td></tr>
+          <tr><td>trigonometric functions: </td><td>sin([degrees] deg) <br> cos([degrees] deg) <br> tan([degrees] deg) <br> cot([degrees] deg)</td></tr>
+          <tr><td>derivative: </td><td>_derivative_[variable]_[function (no spaces)] <br> example: = derivative x x^4-x</td></tr>
+        </table>
+        <!--
+          <button class="instBtn" id="btnMathematics">Mathematics</button><br>
+        <button class="instBtn" id="btnWeather">Weather</button><br>
+        <button class="instBtn" id="btnBooks">Books</button><br>
+        -->
+        <p id="p3"></p>
+      </div>
+      <footer>
+        Author:  <a href="https://github.com/heEXDe" target="_blank" style="text-decoration:none">https://github.com/heEXDe</a>
+      </footer>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.1/math.js'></script>
+<script>
+//import * as math from 'https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.1/math.js'
+
+//eventlisteners
+document.getElementById('btnGo').addEventListener('click', function(){ chooseAction(document.getElementById("the-text").value);});
+// document.getElementById('btnMathematics').addEventListener('click', function(){ ch_page("btnMathematics");});
+// document.getElementById('btnWeather').addEventListener('click', function(){ ch_page("btnWeather");});
+// document.getElementById('btnBooks').addEventListener('click', function(){ ch_page("btnBooks");});
+
+/*
+function ch_page(btnPushedName){
+  switch (btnPushedName){
+    case "btnMathematics":
+    p3.innerHTML = "<b>example: = 2*3.12 + 11.5/1.34 </b><br><br> = <br> to start with mathematics <br> + <br> addition <br> - <br> substraction <br> * <br> multiplication <br> / <br> division <br> ^ <br> exponentiation <br> ^(1/n) <br> n-th root <br> _derivative_[variable]_[function (no spaces)] example: = derivative x x^4-x <br> derivative";
+    while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
+      div_1.append(tbMath);
+    break;
+    case "btnBooks":
+    p3.innerHTML = "<b>example: book lord of the rings </b><br><br> book <br> to start searching for a book <br>";
+    break;
+    case "btnWeather":
+    p3.innerHTML = "<br><br> weather <br> to start searching for weather <br>";
+    break;
+  }
+}
+*/
+
+function chooseAction(text){
+  p2.innerHTML = 'Processing';
+  if (text.charAt(0) == "="){
+    mathematics(text);
+  } else if (text.split(' ')[0] == "weather"){
+    weather(text);
+  } else if (text.split(' ')[0] == "book"){
+    book(text);
+  } else {
+    p2.innerHTML = 'Uncorrect command.'
+  }
+}
+
+function mathematics(x){ 
+  //a different method: p2.innerHTML = Function("return " + x.slice(1))();
+  if (x.split(' ')[1] == 'derivative'){
+    p2.innerHTML = math.derivative(x.split(' ')[3], x.split(' ')[2]);
+  } else {
+    p2.innerHTML = math.evaluate(x.slice(1));
+  }
+}
+function book(x){
+  let url = `https://openlibrary.org/search.json?q=${x.slice(5)}`; // find the way to replace sapces with %20 string
+  //making the request to the API
+  console.log(url);
+  fetch(url)
+  .then((response) => response.json())
+  .then((json) => dispRespB(x, json))
+  .catch(function (error){console.error(`Error fetching data: ${error.message}`); p2.innerHTML = `Error`});
+}
+function weather(x){ 
+  console.log('weather function');
+}
+function dispRespB(x, json){
+  p2.innerHTML = "Results on the OpenLibrary website: <br>" + `<a href=\"https://openlibrary.org/search?q=${x.slice(5)}&mode=everything" target=\"_blank\" style=\"text-decoration:none\">https://openlibrary.org/search?q=${x.slice(5)}&mode=everything</a>`
+  console.log(`type of: ${typeof json} and the json: ${json}`);
+  // console.log(`parsed json: ${JSON.parse(json)}`);
+  // let obj = JSON.parse(json);
+  // p2.innerHTML = obj.docs;
+  //p2.innerHTML = String(json.docs);
+}
+</script>
+</html>
+
