@@ -11,12 +11,15 @@ a) Mathematics
 b) Books
 - find search results by book titles in the OpenLibrary database
 
-## IPFS
+## Links - where to find the project
+
+The project is hosted on IPFS.
+
+Current CID: QmVk5R3mNNr9rfCF7vcqKS8ymXWuoKohqM2KW96t8ifEgN
+
+Gateways: https://ipfs.io/ipfs/QmVk5R3mNNr9rfCF7vcqKS8ymXWuoKohqM2KW96t8ifEgN
+
 What is IPFS: [https://ipfs.tech/](https://ipfs.tech/)
-
-Current CID: QmfWRh2tpRVxSTAyVi5174s2au6FWDPQoHq7Qzxk8CrES9
-
-Gateways: https://ipfs.io/ipfs/QmfWRh2tpRVxSTAyVi5174s2au6FWDPQoHq7Qzxk8CrES9
 
 ## JavaScript libraries used:
 math.js - [https://mathjs.org/](https://mathjs.org/)
