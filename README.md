@@ -13,13 +13,16 @@ a) Mathematics
 b) Books
 - find search results by book titles in the OpenLibrary database
 
+c) password / random string generator
+- generate a password or a random string
+
 ## Links - where to find the project
 
 The project is hosted on IPFS.
 
-Current CID: QmVk5R3mNNr9rfCF7vcqKS8ymXWuoKohqM2KW96t8ifEgN
+Current CID: QmZ1C43W3SDDTU5Z1Hmvd1BYw3tFQ2xz5QJizr8pKTgYCg
 
-Gateways: https://ipfs.io/ipfs/QmVk5R3mNNr9rfCF7vcqKS8ymXWuoKohqM2KW96t8ifEgN
+Gateways: https://ipfs.io/ipfs/QmZ1C43W3SDDTU5Z1Hmvd1BYw3tFQ2xz5QJizr8pKTgYCg , https://dweb.link/ipfs/QmZ1C43W3SDDTU5Z1Hmvd1BYw3tFQ2xz5QJizr8pKTgYCg
 
 What is IPFS: [https://ipfs.tech/](https://ipfs.tech/)
 
