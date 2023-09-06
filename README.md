@@ -1,4 +1,4 @@
-![](/home/michal/Folders/Programming/web-programming/hephaes/img/logo.png)
+![](https://raw.githubusercontent.com/heEXDe/hephaes/main/img/logo.png)
 
 # Hephaes
 Hephaes - a multi-tool for finding information and making calculations. Hosted on IPFS.
