@@ -5,29 +5,35 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 ## Features
 
-a) Mathematics
+a) mathematics
 - basic operations: addition, subtraction, multiplication, division, multiplication, roots, logarithms
 - trigonometric functions
 - calculate derivatives
 
-b) Books
+b) books
 - find search results by book titles in the OpenLibrary database
 
 c) password / random string generator
 - generate a password or a random string
 
+d) currencies
+- convert currencies - for example: USD to EUR, USD to CNY, EUR to JPY
+
 ## Links - where to find the project
 
 The project is hosted on IPFS.
 
-Current CID: QmZ1C43W3SDDTU5Z1Hmvd1BYw3tFQ2xz5QJizr8pKTgYCg
+Current CID: QmTEr4Wf3y756BQJ2geJxDLrqFhi4vQvPMpcHR56wSCJ53
 
-Gateways: https://ipfs.io/ipfs/QmZ1C43W3SDDTU5Z1Hmvd1BYw3tFQ2xz5QJizr8pKTgYCg , https://dweb.link/ipfs/QmZ1C43W3SDDTU5Z1Hmvd1BYw3tFQ2xz5QJizr8pKTgYCg
+Gateways: https://ipfs.io/ipfs/QmTEr4Wf3y756BQJ2geJxDLrqFhi4vQvPMpcHR56wSCJ53 , https://dweb.link/ipfs/QmTEr4Wf3y756BQJ2geJxDLrqFhi4vQvPMpcHR56wSCJ53
 
 What is IPFS: [https://ipfs.tech/](https://ipfs.tech/)
 
 ## JavaScript libraries used:
 math.js - [https://mathjs.org/](https://mathjs.org/)
+
+## APIs used:
+exchangerate.host - [https://exchangerate.host/#/](https://exchangerate.host/#/)
 
 ## Licenses
 1. This software is licensed under MIT license.
