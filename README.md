@@ -26,11 +26,18 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 The project is hosted on IPFS.
 
+Main link - current verion of the app + unchanging link (IPNS): 
+https://k51qzi5uqu5djwm5r3yyrt18x1e2rhkp6ja2n6l2ovbyhu3q26cyc1wounicsn.ipns.dweb.link/
+
+Alternative links:
+https://bafybeibfovoug2bms3rixj4otf6afgs72qpe434dh4xdukoihgizvbmejm.ipfs.dweb.link
+https://ipfs.io/ipfs/QmQrsbHZKuFuqZmPypV7uuqM17BsAe3nqvXcxBJ2sB1DTQ
+https://dweb.link/ipfs/QmQrsbHZKuFuqZmPypV7uuqM17BsAe3nqvXcxBJ2sB1DTQ
+
 Current CID: QmQrsbHZKuFuqZmPypV7uuqM17BsAe3nqvXcxBJ2sB1DTQ
 
 Gateways:
-https://ipfs.io/ipfs/QmQrsbHZKuFuqZmPypV7uuqM17BsAe3nqvXcxBJ2sB1DTQ
-https://dweb.link/ipfs/QmQrsbHZKuFuqZmPypV7uuqM17BsAe3nqvXcxBJ2sB1DTQ
+https://ipfs.github.io/public-gateway-checker/
 
 What is IPFS: [https://ipfs.tech/](https://ipfs.tech/)
 
