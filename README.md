@@ -8,7 +8,7 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 1. mathematics
 - basic operations: addition, subtraction, multiplication, division, multiplication, roots, logarithms
 - trigonometric functions
-- calculate derivatives
+- calculate derivatives, determinant of a matrix
 
 2. books
 - find search results by book titles in the OpenLibrary database
@@ -32,11 +32,11 @@ https://k51qzi5uqu5djwm5r3yyrt18x1e2rhkp6ja2n6l2ovbyhu3q26cyc1wounicsn.ipns.dweb
 
 Alternative links:
 
-https://bafybeibfovoug2bms3rixj4otf6afgs72qpe434dh4xdukoihgizvbmejm.ipfs.dweb.link
-https://ipfs.io/ipfs/QmQrsbHZKuFuqZmPypV7uuqM17BsAe3nqvXcxBJ2sB1DTQ
-https://dweb.link/ipfs/QmQrsbHZKuFuqZmPypV7uuqM17BsAe3nqvXcxBJ2sB1DTQ
+https://bafybeie52okig73r4yvbttjgyuc34on2vvvvv3tfb36kwbm7ol2knmzcza.ipfs.dweb.link
+https://ipfs.io/ipfs/QmYxjqi876oqRT7p8UMPY5Luzsxty6ZpdjSUksACF4d7hH
+https://dweb.link/ipfs/QmYxjqi876oqRT7p8UMPY5Luzsxty6ZpdjSUksACF4d7hH
 
-Current CID: QmQrsbHZKuFuqZmPypV7uuqM17BsAe3nqvXcxBJ2sB1DTQ
+Current CID: QmYxjqi876oqRT7p8UMPY5Luzsxty6ZpdjSUksACF4d7hH
 
 Gateways:
 https://ipfs.github.io/public-gateway-checker/
@@ -44,7 +44,7 @@ https://ipfs.github.io/public-gateway-checker/
 What is IPFS: [https://ipfs.tech/](https://ipfs.tech/)
 
 ## JavaScript libraries used:
-math.js - [https://mathjs.org/](https://mathjs.org/)
+math.js (version 11.9.1) - [https://mathjs.org/](https://mathjs.org/)
 
 ## APIs used:
 exchangerate.host - [https://exchangerate.host/#/](https://exchangerate.host/#/)
