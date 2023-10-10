@@ -22,6 +22,9 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 5. units of measure
 - convert units - convert meters, inches and kilograms to pounds, inches, yards, miles, ounces and feet
 
+6. Search engine (redirection to Brave Search)
+- search the web using privacy preserving search engine - Brave Search
+
 ## Links - where to find the project
 
 The project is hosted on IPFS.
@@ -32,10 +35,10 @@ https://k51qzi5uqu5djwm5r3yyrt18x1e2rhkp6ja2n6l2ovbyhu3q26cyc1wounicsn.ipns.dweb
 
 Alternative links:
 
-https://bafybeigpdy33tvxbch4rahf7qn3onbgkk3vg7wydxozoilajls6myvunaa.ipfs.dweb.link/
-https://ipfs.io/ipfs/QmcH9pxSnRBVt5veWkoZkDkeQeYdDVA4uHboxQ4RJN94bq
+https://bafybeihsew2s6v47jkr47t2j6ktdutmxyqshi3sbczjjcxcvmfonmwwoxm.ipfs.dweb.link/
+https://ipfs.io/ipfs/QmedtinniaACbherp1sz4MajthqT3vB4BzzaYeMbGvcCLz
 
-Current CID: QmcH9pxSnRBVt5veWkoZkDkeQeYdDVA4uHboxQ4RJN94bq
+Current CID: QmedtinniaACbherp1sz4MajthqT3vB4BzzaYeMbGvcCLz
 
 Gateways:
 https://ipfs.github.io/public-gateway-checker/
