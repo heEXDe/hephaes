@@ -23,7 +23,8 @@
     h3   {font-family: "Mono";color: rgb(255, 255, 255); text-align:center}
     p    {font-family: "Mono";color: rgb(255, 255, 255);}
     p.center {text-align:center}
-    .instBtn {
+    #p2 {/* border: 1px dashed white; */ padding-top: 2%; padding-bottom: 2%;}
+    #btnGo {
       background-color: rgb(100, 100, 100);
       border: none;
       color: white; 
@@ -31,24 +32,11 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-      width: 30%;}
-    .instBtn:hover {background-color: rgb(75, 75, 75);}
-    .bGo {
-      background-color: rgb(100, 100, 100);
-      border: none;
-      color: white; 
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      margin: 4px 2px;
+      margin: 2% 2%;
       cursor: pointer;
       border-radius: 4px;
       width: 10%;}
-    .bGo:hover {background-color: rgb(75, 75, 75);}
+    #btnGo:hover {background-color: rgb(75, 75, 75);}
     table.center {
       margin-left: auto;
       margin-right: auto;
@@ -174,7 +162,8 @@ function mathematics(x){
       p2.innerHTML = math.derivative(x.split(' ')[3], x.split(' ')[2]);
       break;
     default:
-      p2.innerHTML = math.evaluate(x.slice(1));
+      // p2.innerHTML = math.evaluate(x.slice(1));
+      p2.innerHTML = Math.round((math.evaluate(x.slice(1)) + Number.EPSILON) * 10000) / 10000;
   }
 }
 // fn to get a link to search results in the OpenLibrary
