@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Hephaes</title>
   <!-- source of the font: https://www.fontsquirrel.com/fonts/Silkscreen -->
-  <link rel="stylesheet" href="https://ipfs.io/ipfs/QmNvK39Yxm52GsWcJt44CzUE2ESJn2mWhJUbNze13X5dCF?filename=stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="https://bafybeiait6atbrur3zr3mdny3qed26kj2d2s5e5qbl2dqhxqojlxpxkg3q.ipfs.dweb.link/?filename=stylesheet.css" type="text/css" charset="utf-8"/>
   <style>
     body {
         background-color: darkslategray;
@@ -95,6 +95,7 @@
 
 //eventlisteners
 document.getElementById('btnGo').addEventListener('click', function(){ chooseAction(document.getElementById("theText").value);});
+document.getElementById('theText').addEventListener('keypress', function(event){ if (event.key === "Enter") {chooseAction(document.getElementById("theText").value);}});
 document.getElementById('about').addEventListener('click', function(){ ch_page("about");});
 document.getElementById('howToUse').addEventListener('click', function(){ ch_page("howToUse");});
 
