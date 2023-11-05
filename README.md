@@ -35,10 +35,10 @@ https://k51qzi5uqu5djwm5r3yyrt18x1e2rhkp6ja2n6l2ovbyhu3q26cyc1wounicsn.ipns.dweb
 
 Alternative links:
 
-https://bafybeidjfk6oo7jtdhhlkngm34n2oxcn6tbf2skqr4sj3wwifyduzopvyi.ipfs.dweb.link/
-https://ipfs.io/ipfs/QmVRBKFLmWbUYtPUWZEXVdXvYMzAvNqF77q9JDoceQGkcZ
+https://bafybeihzkklwzgrp3fsxkf2uocbyvwqpxi3o2dl55hesnhafkrkxcuoww4.ipfs.dweb.link/
+https://ipfs.io/ipfs/Qmf7uGedLRv9pjY2VXG5WNP7BtXStwipRfNrcsSiLsUVkJ
 
-Current CID: QmVRBKFLmWbUYtPUWZEXVdXvYMzAvNqF77q9JDoceQGkcZ
+Current CID: Qmf7uGedLRv9pjY2VXG5WNP7BtXStwipRfNrcsSiLsUVkJ
 
 Gateways:
 https://ipfs.github.io/public-gateway-checker/
