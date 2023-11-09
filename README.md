@@ -52,6 +52,6 @@ math.js (version 11.9.1) - [https://mathjs.org/](https://mathjs.org/)
 exchangerate.host - [https://exchangerate.host/#/](https://exchangerate.host/#/)
 
 ## Licenses
-1. This software is licensed under MIT license.
+1. This software is licensed under the MIT license.
 2. math.js - Copyright (C) 2013-2023 Jos de Jong wjosdejong@gmail.com.
 Licensed under the Apache License, Version 2.0 (text of the license in 'docs' folder).
