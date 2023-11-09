@@ -34,7 +34,7 @@ Other gateways:
 
 How to construct an alternative address:
 
-https://ju2rlirej5slwkor2unwgtokg4cgdzuuxegnc2klzyo73sgw4w2q.{gateway address}/TTUVoiRPZLsp0dUbY03KNwRh5pS5DNFpS84d_cjW5bU
+"ju2rlirej5slwkor2unwgtokg4cgdzuuxegnc2klzyo73sgw4w2q.{gateway address}/TTUVoiRPZLsp0dUbY03KNwRh5pS5DNFpS84d_cjW5bU"
 
 ## Arweave
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
