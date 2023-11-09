@@ -1,7 +1,7 @@
-![](https://raw.githubusercontent.com/heEXDe/hephaes/main/img/logo.png)
+![](https://raw.githubusercontent.com/heEXDe/hephaes/main/img/hephaes-002.png)
 
 # Hephaes
-Hephaes - a multi-tool for finding information and making calculations. Hosted on IPFS.
+Hephaes - a multi-tool for finding information and making calculations. Hosted on Arweave network.
 
 ## Features
 
@@ -27,23 +27,17 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 ## Links - where to find the project
 
-The project is hosted on IPFS.
+https://ju2rlirej5slwkor2unwgtokg4cgdzuuxegnc2klzyo73sgw4w2q.arweave.net/TTUVoiRPZLsp0dUbY03KNwRh5pS5DNFpS84d_cjW5bU
 
-Main link - current verion of the app + unchanging link (IPNS):
+Other gateways:
+[https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
-https://k51qzi5uqu5djwm5r3yyrt18x1e2rhkp6ja2n6l2ovbyhu3q26cyc1wounicsn.ipns.dweb.link/
+How to construct an alternative address:
 
-Alternative links:
+https://ju2rlirej5slwkor2unwgtokg4cgdzuuxegnc2klzyo73sgw4w2q.{gateway address}/TTUVoiRPZLsp0dUbY03KNwRh5pS5DNFpS84d_cjW5bU
 
-https://bafybeihzkklwzgrp3fsxkf2uocbyvwqpxi3o2dl55hesnhafkrkxcuoww4.ipfs.dweb.link/
-https://ipfs.io/ipfs/Qmf7uGedLRv9pjY2VXG5WNP7BtXStwipRfNrcsSiLsUVkJ
-
-Current CID: Qmf7uGedLRv9pjY2VXG5WNP7BtXStwipRfNrcsSiLsUVkJ
-
-Gateways:
-https://ipfs.github.io/public-gateway-checker/
-
-What is IPFS: [https://ipfs.tech/](https://ipfs.tech/)
+## Arweave
+What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
 
 ## JavaScript libraries used:
 math.js (version 11.9.1) - [https://mathjs.org/](https://mathjs.org/)
