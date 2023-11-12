@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Hephaes</title>
   <!-- source of the font: https://www.fontsquirrel.com/fonts/Silkscreen -->
-  <link rel="stylesheet" href="https://bafybeiait6atbrur3zr3mdny3qed26kj2d2s5e5qbl2dqhxqojlxpxkg3q.ipfs.dweb.link/?filename=stylesheet.css" type="text/css" charset="utf-8"/>
+  <!-- <link rel="stylesheet" href="https://bafybeiait6atbrur3zr3mdny3qed26kj2d2s5e5qbl2dqhxqojlxpxkg3q.ipfs.dweb.link/?filename=stylesheet.css" type="text/css" charset="utf-8"/> -->
   <style>
     body {
         background-color: darkslategray;
@@ -13,6 +13,18 @@
         font-family: "Mono";
         color: rgb(255, 255, 255);
       }
+      @font-face {
+    font-family: 'silkscreennormal';
+    src: url('slkscr-webfont.eot');
+    src: url('slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('slkscr-webfont.woff2') format('woff2'),
+         /* url('https://ipfs.io/ipfs/Qmd7JmS1mZwYbzDCeJUGaw2eaVtEvTdwNohtUG39uH97kN?filename=slkscr-webfont.woff') format('woff'),*/
+         url('https://arweave.net/YfjFeKRdj7hl1CDfkDzmXRv1eB2XekBPqF8-ei1b01Y') format('woff'),
+         url('slkscr-webfont.ttf') format('truetype'),
+         url('slkscr-webfont.svg#silkscreennormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
     div.center {text-align:center;}
     .topBar {
       text-align: left;
@@ -34,8 +46,10 @@
       display: inline-block;
       margin: 2% 2%;
       cursor: pointer;
-      border-radius: 4px;
-      width: 10%;}
+      border-radius: 5px;
+      width: 10%;
+      box-shadow: 0 5px 10px darkgray;
+    }
     #btnGo:hover {background-color: rgb(75, 75, 75);}
     table.center {
       margin-left: auto;
@@ -46,7 +60,7 @@
       color: white;
       text-align: center;
       border: 1px solid white;
-      border-radius: 10px;
+      border-radius: 7px;
     }
     td.HowToHead {writing-mode: vertical-rl;}
     footer {
@@ -70,6 +84,23 @@
       color: white;
     }
     ol {text-align: left; padding-left: 20%; padding-right: 20%;}
+    .tiles{
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      margin-top: 5%;
+      justify-content: center;
+    }
+    .oneTile{
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: 2%;
+      text-align: center;
+      box-shadow: 0 5px 10px darkgray;
+      padding: 3%;
+    }
+    @media (max-width: 1000px){.tiles{grid-template-columns: repeat(3, 30%);}}
+    @media (max-width: 500px){.tiles{grid-template-columns: repeat(2, 30%);}}
+    @media (max-width: 250px){.tiles{grid-template-columns: repeat(1, 30%);}}
   </style>
 </head>
 <body>
@@ -109,7 +140,7 @@ var p2 = document.getElementById("p2");
 
 // content for 'how to use' and 'about' pages
 hHowToUseIt.innerHTML = "<h2>How to use it:</h2><br> <table id=\"infoTb\" class=\"center\"><tr><td class=\"HowToHead\" rowspan=\"2\">Books</td><td>example: </td><td>book lord of the rings</td></tr><tr><td>to start searching for a book: </td><td>book</td></tr><tr><td class=\"HowToHead\" rowspan=\"13\">Mathematics</td><td>example: </td><td>= 2*3.12 + 11.5/1.34</td></tr><tr><td>to start with mathematics: </td><td>=</td></tr><tr><td>addition: </td><td>+</td></tr><tr><td>substraction: </td><td>-</td></tr>   <tr><td>multiplication: </td><td>*</td></tr><tr><td>division: </td><td>/</td></tr><tr><td>exponentiation: </td><td>^</td></tr><tr><td>n-th root: </d><td>^(1/n)</td></tr><tr><td>logarithm: </td><td>log(x) - natural log.<br>loga(b) - of 'b' to base 'a'</td></tr><tr><td>trigonometric functions: </td><td>sin([degrees] deg) <br> cos([degrees] deg) <br> tan([degrees] deg) <br> cot([degrees] deg)</td></tr><tr><td>derivative: </td><td>_derivative_[variable]_[function (no spaces)] <br> example: = derivative x x^4-x</td></tr><tr><td>factorial: </td><td>[number]! <br> example: = 9!</td></tr><tr><td>determinant of <br> a matrix: </td><td>det([num1A, ..., numNA; num1B, ..., numNB]) <br> example: = det([1, 4; 3, 1])</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Random password / <br> string generator</td><td>to generate a password / <br> string of the desired length: </td><td>random_[the length of the password]_sc(optional)<br>sc - special characters</td></tr><tr><td>example: </td><td>random 12<br>or<br>random 15 sc</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Currency converter</td><td>to convert currency A to B: </td><td>currency_[A]_to_[B]</td></tr><tr><td>example: </td><td>currency USD to EUR</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Unit converter</td><td>to convert unit A to B: <br> (m to in, ft, yd, mi) <br> (in to cm, m)<br> (kg to oz, lb)</td><td>unitconv_[A]_to_[B]<br>or<br>= [unit A] to [unit B]</td></tr><tr><td>example: </td><td>unitconv 5.5 m to in<br>or<br>= 150 lbs to kg</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Search engine</td><td>to search the web: </td><td>search_[the search]</td></tr><tr><td>example: </td><td>search USA population</td></tr></table>";
-aboutText.innerHTML = "<h3>About</h3><br><hr>Hephaes (from the Greek god of artisans, blacksmiths, carpenters, craftsmen, metallurgy, metalworking and sculpture - Hephaestus) is a multifunctional open source tool. Multifunctional? Yes, or at least that's the ultimate intent of the project. The number of available functions will grow over time.<br><hr><ol id=\"olAbout\"><li>open source: <a href=\"https://github.com/heEXDe/hephaes\" target=\"_blank\">https://github.com/heEXDe/hephaes</a></li><li>Mathematics: basic operations (addition, subtraction, multiplication, division, multiplication, roots, logarithms), trigonometric functions, calculate derivatives</li><li>Books: find search results by book titles in the Open Library (<a href=\"https://openlibrary.org/\"  target=\"_blank\">https://openlibrary.org/</a>) database</li><li>Random generator: generate a random string / password</li><li>Currency converter: convert one currency to the other</li><li>Units of measure converter: convert meters, inches and kilograms to pounds, inches, yards, miles, ounces and feet</li><li>Search engine (redirection to Brave Search): search the web using privacy preserving search engine - <a href=\"https://search.brave.com/\"  target=\"_blank\">Brave Search</a></li></ol>";
+aboutText.innerHTML = "<h3>About</h3><br><hr>Hephaes (from the Greek god of artisans, blacksmiths, carpenters, craftsmen, metallurgy, metalworking and sculpture - Hephaestus) is a multifunctional open source tool. Multifunctional? Yes, or at least that's the ultimate intent of the project. The number of available functions will grow over time.<br><hr><div class=\"tiles\"><div class=\"oneTile\"><p>open source: <a href=\"https://github.com/heEXDe/hephaes\" target=\"_blank\">https://github.com/heEXDe/hephaes</a></p></div><div class=\"oneTile\"><p>Mathematics: <br> basic operations (addition, subtraction, multiplication, division, multiplication, roots, logarithms), trigonometric functions, calculate derivatives</p></div><div class=\"oneTile\"><p>Books: <br> find search results by book titles in the Open Library (<a href=\"https://openlibrary.org/\"  target=\"_blank\">https://openlibrary.org/</a>) database</p></div><div class=\"oneTile\"><p>Random generator: <br> generate a random string / password</p></div><div class=\"oneTile\"><p>Currency converter: <br> convert one currency to the other</p></div><div class=\"oneTile\"><p>Units of measure converter: <br> convert meters, inches and kilograms to pounds, inches, yards, miles, ounces and feet</p></div><div class=\"oneTile\"><p>Search engine (redirection to Brave Search): <br> search the web using privacy preserving search engine - <a href=\"https://search.brave.com/\"  target=\"_blank\">Brave Search</a></p></div></div>";
 
 // set id for elements
 hHowToUseIt.setAttribute("id", "hHowToUseIt");
