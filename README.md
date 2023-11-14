@@ -27,14 +27,14 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 ## Links - where to find the project
 
-https://daq7h6foxva2aitwrsvx4kiioc6qpug5e4itjac5gm6xzedj7tkq.arweave.net/GCHz-K69QaAidoyrfikIcL0H0N0nETSAXTM9fJBp_NU
+[https://daq7h6foxva2aitwrsvx4kiioc6qpug5e4itjac5gm6xzedj7tkq.arweave.net/GCHz-K69QaAidoyrfikIcL0H0N0nETSAXTM9fJBp_NU](https://daq7h6foxva2aitwrsvx4kiioc6qpug5e4itjac5gm6xzedj7tkq.arweave.net/GCHz-K69QaAidoyrfikIcL0H0N0nETSAXTM9fJBp_NU)
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
 
-"daq7h6foxva2aitwrsvx4kiioc6qpug5e4itjac5gm6xzedj7tkq.{gateway address}/GCHz-K69QaAidoyrfikIcL0H0N0nETSAXTM9fJBp_NU"
+`daq7h6foxva2aitwrsvx4kiioc6qpug5e4itjac5gm6xzedj7tkq.{gateway address}/GCHz-K69QaAidoyrfikIcL0H0N0nETSAXTM9fJBp_NU`
 
 ## Arweave
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
