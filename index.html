@@ -35,7 +35,16 @@
     h3   {font-family: "Mono";color: rgb(255, 255, 255); text-align:center}
     p    {font-family: "Mono";color: rgb(255, 255, 255);}
     p.center {text-align:center}
-    #p2 {/* border: 1px dashed white; */ padding-top: 2%; padding-bottom: 2%;}
+    .p2v1 {text-align:center; font-family: "Mono";color: rgb(255, 255, 255); padding-top: 2%; padding-bottom: 2%;}
+    .p2v2 {
+      font-family: "Mono";
+      color: rgb(255, 255, 255);
+      border: 2px solid white;
+      border-radius: 10px;
+      margin: 5% 20%;
+      text-align: center;
+      box-shadow: 0 5px 10px darkgray;
+      padding: 3%;}
     #btnGo {
       background-color: rgb(100, 100, 100);
       border: none;
@@ -115,7 +124,7 @@
         <input id="theText" name="the-text" type="text" placeholder="You question / command here ...">
         <br id="b1">
         <button class="bGo" id="btnGo">Go</button>
-        <p id="p2"></p>
+        <p id="p2" class="p2v1"></p>
       </div>
       <footer>
         Author:  <a href="https://github.com/heEXDe" target="_blank" style="text-decoration:none">https://github.com/heEXDe</a>
@@ -151,6 +160,7 @@ function ch_page(eleChoosen){
     case "title":
     while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
     div_1.append(theText, b1, btnGo, p2);
+    document.getElementById("p2").className = "p2v1";
     p2.innerText = '';
     theText.value = '';
     break;
@@ -167,6 +177,7 @@ function ch_page(eleChoosen){
 // fn to choose the action to perform
 function chooseAction(text){
   try{
+  document.getElementById("p2").className = "p2v2";
   p2.innerHTML = 'Processing ...';
   if (text.charAt(0) == "="){
     mathematics(text);
@@ -189,12 +200,12 @@ function chooseAction(text){
 }
 // fn to perform mathematical calculations
 function mathematics(x){
+  // document.getElementById("p2").className = "oneTile";
   switch (x.split(' ')[1]){
     case 'derivative':
       p2.innerHTML = math.derivative(x.split(' ')[3], x.split(' ')[2]);
       break;
     default:
-      // p2.innerHTML = math.evaluate(x.slice(1));
       p2.innerHTML = Math.round((math.evaluate(x.slice(1)) + Number.EPSILON) * 10000) / 10000;
   }
 }
@@ -202,12 +213,14 @@ function mathematics(x){
 function book(x){
   let a = x.slice(5).trim().replace(/\s/g, '%20');
   let url = `https://openlibrary.org/search.json?q=${x.slice(5).trim()}`;
+  // document.getElementById("p2").className = "oneTile";
   p2.innerHTML = "Results on the OpenLibrary website: <br>" + `<a href=\"https://openlibrary.org/search?q=${a}&mode=everything" target=\"_blank\" style=\"text-decoration:none\">https://openlibrary.org/search?q=${a}&mode=everything</a>`
 }
 // fn to get current weather - not working
 function weather(x){ 
   let a = x.slice(8);
   let url = ``;
+  // document.getElementById("p2").className = "oneTile";
   //making a request to the API
   fetch(url)
   .then((response) => response.json())
@@ -226,17 +239,16 @@ function randomFn(x){
     result += 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.charAt(Math.floor(Math.random() * 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.length));
   };
   }
-  
+  //document.getElementById("p2").className = "oneTile";
   p2.innerHTML = result;
 }
 // fn to convert one currency to another
 function curConv(x){
-  // currency [amount] [A] to [B]
-  let url = `https://api.exchangerate.host/convert?from=${x.split(' ')[2]}&to=${x.split(' ')[4]}&amount=${x.split(' ')[1]}`;
+  //document.getElementById("p2").className = "oneTile";
   //making a request to the API
-  fetch(url)
+  fetch(`https://api.frankfurter.app/latest?amount=${x.split(' ')[1]}&from=${x.split(' ')[2]}&to=${x.split(' ')[4]}`)
   .then((response) => response.json())
-  .then((json) => console.log(json) /*p2.innerHTML = `${x.split(' ')[1]} ${x.split(' ')[2]} = ${json["result"]} ${x.split(' ')[4]}`*/)
+  .then((json) => p2.innerHTML = `${x.split(' ')[1]} ${x.split(' ')[2]} = ${Object.values(json["rates"])[0]} ${x.split(' ')[4]}`)
   .catch(function (error){console.error(`Error fetching data: ${error.message}`); p2.innerHTML = 'Error!';});
 }
 // fn to convert units of measure
