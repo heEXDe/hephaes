@@ -27,14 +27,13 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 ## Links - where to find the project
 
-[https://swwkfauxl6faht25d5kyb4flvu7m4at3hlypbhwtdmh4q5u6cirq.arweave.net/layigpdfigPPXR9VgPCrrT7OAns68PCe0xsPyHaeEiM](https://swwkfauxl6faht25d5kyb4flvu7m4at3hlypbhwtdmh4q5u6cirq.arweave.net/layigpdfigPPXR9VgPCrrT7OAns68PCe0xsPyHaeEiM)
+[https://yyivojvwegjz4h22mx56ifq4t7wlt5hme6mwbbjiljw24gmrjxkq.arweave.net/xhFXJrYhk54fWmX75BYcn-y59OwnmWCFKFptrhmRTdU](https://yyivojvwegjz4h22mx56ifq4t7wlt5hme6mwbbjiljw24gmrjxkq.arweave.net/xhFXJrYhk54fWmX75BYcn-y59OwnmWCFKFptrhmRTdU)
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
-
-`https://swwkfauxl6faht25d5kyb4flvu7m4at3hlypbhwtdmh4q5u6cirq.{gateway address}/layigpdfigPPXR9VgPCrrT7OAns68PCe0xsPyHaeEiM`
+`yyivojvwegjz4h22mx56ifq4t7wlt5hme6mwbbjiljw24gmrjxkq.{gateway address}/xhFXJrYhk54fWmX75BYcn-y59OwnmWCFKFptrhmRTdU`
 
 ## Arweave
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
@@ -43,7 +42,7 @@ What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
 math.js (version 11.9.1) - [https://mathjs.org/](https://mathjs.org/)
 
 ## APIs used:
-exchangerate.host - [https://exchangerate.host/#/](https://exchangerate.host/#/)
+Frankfurter API - [https://www.frankfurter.app/](https://www.frankfurter.app/)
 
 ## Licenses
 1. This software is licensed under the MIT license.
