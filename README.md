@@ -27,24 +27,25 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 ## Links - where to find the project
 
-[https://yyivojvwegjz4h22mx56ifq4t7wlt5hme6mwbbjiljw24gmrjxkq.arweave.net/xhFXJrYhk54fWmX75BYcn-y59OwnmWCFKFptrhmRTdU](https://yyivojvwegjz4h22mx56ifq4t7wlt5hme6mwbbjiljw24gmrjxkq.arweave.net/xhFXJrYhk54fWmX75BYcn-y59OwnmWCFKFptrhmRTdU)
+[https://gygvtgsl2gy7334oyojnpzl4mrhiov6yut5lcxgx4gho5djw2hwa.arweave.net/Ng1ZmkvRsf3vjsOS1-V8ZE6HV9ik-rFc1-GO7o020ew](https://gygvtgsl2gy7334oyojnpzl4mrhiov6yut5lcxgx4gho5djw2hwa.arweave.net/Ng1ZmkvRsf3vjsOS1-V8ZE6HV9ik-rFc1-GO7o020ew)
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
-`yyivojvwegjz4h22mx56ifq4t7wlt5hme6mwbbjiljw24gmrjxkq.{gateway address}/xhFXJrYhk54fWmX75BYcn-y59OwnmWCFKFptrhmRTdU`
+
+`gygvtgsl2gy7334oyojnpzl4mrhiov6yut5lcxgx4gho5djw2hwa.{gateway address}/Ng1ZmkvRsf3vjsOS1-V8ZE6HV9ik-rFc1-GO7o020ew`
 
 ## Arweave
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
 
 ## JavaScript libraries used:
 math.js (version 11.9.1) - [https://mathjs.org/](https://mathjs.org/)
+Copyright (C) 2013-2023 Jos de Jong wjosdejong@gmail.com. Licensed under the Apache License, Version 2.0 (text of the license in 'docs' folder)
 
 ## APIs used:
-Frankfurter API - [https://www.frankfurter.app/](https://www.frankfurter.app/)
+Frankfurter API - [https://www.frankfurter.app/](https://www.frankfurter.app/) (MIT license)
+Open-Meteo API - [https://open-meteo.com/](https://open-meteo.com/) (AGPLv3 license; text in 'docs' folder); API data offered under [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 
 ## Licenses
-1. This software is licensed under the MIT license.
-2. math.js - Copyright (C) 2013-2023 Jos de Jong wjosdejong@gmail.com.
-Licensed under the Apache License, Version 2.0 (text of the license in 'docs' folder).
+This software is licensed under the MIT license.
