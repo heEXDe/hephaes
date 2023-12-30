@@ -25,16 +25,19 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 6. Search engine (redirection to Brave Search)
 - search the web using privacy preserving search engine - Brave Search
 
+7. Weather
+- get the temperature, cloud cover, and rain for the indicated location (geographic coordinate system) - data from open-meteo.com
+
 ## Links - where to find the project
 
-[https://gygvtgsl2gy7334oyojnpzl4mrhiov6yut5lcxgx4gho5djw2hwa.arweave.net/Ng1ZmkvRsf3vjsOS1-V8ZE6HV9ik-rFc1-GO7o020ew](https://gygvtgsl2gy7334oyojnpzl4mrhiov6yut5lcxgx4gho5djw2hwa.arweave.net/Ng1ZmkvRsf3vjsOS1-V8ZE6HV9ik-rFc1-GO7o020ew)
+[https://zezh2tlexwy3jnonhgezqjsk6zw75e5ptfmlqhjjgzccdaiyl5ga.arweave.net/yTJ9TWS9sbS1zTmJmCZK9m3-k6-ZWLgdKTZEIYEYX0w](https://zezh2tlexwy3jnonhgezqjsk6zw75e5ptfmlqhjjgzccdaiyl5ga.arweave.net/yTJ9TWS9sbS1zTmJmCZK9m3-k6-ZWLgdKTZEIYEYX0w)
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
 
-`gygvtgsl2gy7334oyojnpzl4mrhiov6yut5lcxgx4gho5djw2hwa.{gateway address}/Ng1ZmkvRsf3vjsOS1-V8ZE6HV9ik-rFc1-GO7o020ew`
+`zezh2tlexwy3jnonhgezqjsk6zw75e5ptfmlqhjjgzccdaiyl5ga.{gateway address}/yTJ9TWS9sbS1zTmJmCZK9m3-k6-ZWLgdKTZEIYEYX0w`
 
 ## Arweave
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
