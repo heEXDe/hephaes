@@ -28,16 +28,19 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 7. Weather
 - get the temperature, cloud cover, and rain for the indicated location (geographic coordinate system) - data from open-meteo.com
 
+8. Arweave functionality
+- get few links to the alternative gateways, for the provided Arweave link
+
 ## Links - where to find the project
 
-[https://zezh2tlexwy3jnonhgezqjsk6zw75e5ptfmlqhjjgzccdaiyl5ga.arweave.net/yTJ9TWS9sbS1zTmJmCZK9m3-k6-ZWLgdKTZEIYEYX0w](https://zezh2tlexwy3jnonhgezqjsk6zw75e5ptfmlqhjjgzccdaiyl5ga.arweave.net/yTJ9TWS9sbS1zTmJmCZK9m3-k6-ZWLgdKTZEIYEYX0w)
+[https://vhxa5ycvwii4njg5sywnyzdcy3yngn5m6iwh5n3rhmk3jmnj7vja.arweave.net/qe4O4FWyEcak3ZYs3GRixvDTN6zyLH63cTsVtLGp_VI](https://vhxa5ycvwii4njg5sywnyzdcy3yngn5m6iwh5n3rhmk3jmnj7vja.arweave.net/qe4O4FWyEcak3ZYs3GRixvDTN6zyLH63cTsVtLGp_VI)
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
 
-`zezh2tlexwy3jnonhgezqjsk6zw75e5ptfmlqhjjgzccdaiyl5ga.{gateway address}/yTJ9TWS9sbS1zTmJmCZK9m3-k6-ZWLgdKTZEIYEYX0w`
+`vhxa5ycvwii4njg5sywnyzdcy3yngn5m6iwh5n3rhmk3jmnj7vja.{gateway address}/qe4O4FWyEcak3ZYs3GRixvDTN6zyLH63cTsVtLGp_VI`
 
 ## Arweave
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
