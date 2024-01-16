@@ -200,6 +200,7 @@ function ch_page(eleChoosen){
 }
 // fn to choose the action to perform
 function chooseAction(text){
+  text = text.split(' ').filter((a) => a !== "").join(' ');
   try{
   document.getElementById("p2").className = "p2v2";
   p2.innerHTML = 'Processing ...';
@@ -331,7 +332,7 @@ function agc(x){
   let gates = ["ar-io.dev", "permagate.io", "vilenarios.com", "arbr.pro", "bobinstein.com"]
   for(gate in gates){
     // returning edited link (as for now, to the last gateway from the array)
-    p2.innerHTML = x.split(' ').filter((a) => a !== "")[1].replace(/\.(.*)\//, "." + gates[gate] + "/");
+    p2.innerHTML = x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/");
   }
 }
 // fn generating links to few alternative Arweave gateways, for the provided Arweave link
@@ -339,7 +340,7 @@ function awl(x){
   let gates = ["ar-io.dev", "permagate.io", "vilenarios.com", "arbr.pro", "bobinstein.com"];
   let links = [];
   for(gate in gates){
-    links.push(x.split(' ').filter((a) => a !== "")[1].replace(/\.(.*)\//, "." + gates[gate] + "/"));
+    links.push(x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/"));
   }
   // displaying the links and adding the 'Copy' button
   p2.innerHTML = links.join(' \n ') + "<br><button id=\"btnCopy\">Copy</button>";
