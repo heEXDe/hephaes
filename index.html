@@ -330,9 +330,24 @@ function search(x){
 // fn checking if a file on the Arweave network is accessible through gateways other than the one specified in the input link
 function agc(x){
   let gates = ["ar-io.dev", "permagate.io", "vilenarios.com", "arbr.pro", "bobinstein.com"]
+  async function isWebsiteAvailable(url) {
+  try {
+    const response = await fetch(url);
+    if (response.status === 200) {
+      return true;
+    } else {
+      return false;
+    }
+  } catch (error) {
+    return false;
+  }
+}
+
   for(gate in gates){
-    // returning edited link (as for now, to the last gateway from the array)
-    p2.innerHTML = x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/");
+    if(isWebsiteAvailable(x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/"))){
+      p2.innerHTML = `<a href=${x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/")} target=\"_blank\" style=\"text-decoration:none\">${x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/")}</a>`
+      break;
+    }
   }
 }
 // fn generating links to few alternative Arweave gateways, for the provided Arweave link
