@@ -59,6 +59,7 @@ Bootstrap (v5.3.2 ) - [https://getbootstrap.com/](https://getbootstrap.com/); (M
 Frankfurter API - [https://www.frankfurter.app/](https://www.frankfurter.app/) (MIT license)
 
 Open-Meteo API - [https://open-meteo.com/](https://open-meteo.com/) (AGPLv3 license; text in 'docs' folder); API data offered under [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+Bootstrap (v5.3.2 ) - [https://getbootstrap.com/](https://getbootstrap.com/); Licenseed under MIT license.
 
 
 ## Licenses
