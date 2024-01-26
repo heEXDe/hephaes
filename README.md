@@ -49,7 +49,7 @@ What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
 math.js (version 11.9.1) - [https://mathjs.org/](https://mathjs.org/)
 Copyright (C) 2013-2023 Jos de Jong wjosdejong@gmail.com. Licensed under the Apache License, Version 2.0 (text of the license in 'docs' folder)
 
-## APIs used:
+## Third party APIs used:
 Frankfurter API - [https://www.frankfurter.app/](https://www.frankfurter.app/) (MIT license)
 Open-Meteo API - [https://open-meteo.com/](https://open-meteo.com/) (AGPLv3 license; text in 'docs' folder); API data offered under [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 
