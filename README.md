@@ -34,14 +34,14 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 ## Links - where to find the project
 
-[https://e7p4qlwrskei4k6uphiwj2fl4lrtmeggcclhoznlhjee52kwmgia.arweave.net/J9_ILtGSiI4r1HnRZOir4uM2EMYQlndlqzpITulWYZA](https://e7p4qlwrskei4k6uphiwj2fl4lrtmeggcclhoznlhjee52kwmgia.arweave.net/J9_ILtGSiI4r1HnRZOir4uM2EMYQlndlqzpITulWYZA)
+[https://o2qshknlh6r7em42rrjwovmjlfgpcb7xjkcvirxkzv37ezpoggqq.arweave.net/dqEjqas_o_IzmoxTZ1WJWUzxB_dKhVRG6s138mXuMaE](https://o2qshknlh6r7em42rrjwovmjlfgpcb7xjkcvirxkzv37ezpoggqq.arweave.net/dqEjqas_o_IzmoxTZ1WJWUzxB_dKhVRG6s138mXuMaE)
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
 
-`e7p4qlwrskei4k6uphiwj2fl4lrtmeggcclhoznlhjee52kwmgia.{gateway address}/J9_ILtGSiI4r1HnRZOir4uM2EMYQlndlqzpITulWYZA`
+`o2qshknlh6r7em42rrjwovmjlfgpcb7xjkcvirxkzv37ezpoggqq.{gateway address}/dqEjqas_o_IzmoxTZ1WJWUzxB_dKhVRG6s138mXuMaE`
 
 ## Arweave
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
