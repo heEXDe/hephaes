@@ -30,17 +30,18 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 8. Arweave functionality
 - get few links to the alternative gateways, for the provided Arweave link
+- display link for your file using a working gateway
 
 ## Links - where to find the project
 
-[https://25teuo3ymrospc6b7l6lkaqmei3alnwwxcxglq36jtx72haz37fq.arweave.net/12ZKO3hkXSeLwfr8tQIMIjYFtta4rmXDfkzv_RwZ38s](https://25teuo3ymrospc6b7l6lkaqmei3alnwwxcxglq36jtx72haz37fq.arweave.net/12ZKO3hkXSeLwfr8tQIMIjYFtta4rmXDfkzv_RwZ38s)
+[https://e7p4qlwrskei4k6uphiwj2fl4lrtmeggcclhoznlhjee52kwmgia.arweave.net/J9_ILtGSiI4r1HnRZOir4uM2EMYQlndlqzpITulWYZA](https://e7p4qlwrskei4k6uphiwj2fl4lrtmeggcclhoznlhjee52kwmgia.arweave.net/J9_ILtGSiI4r1HnRZOir4uM2EMYQlndlqzpITulWYZA)
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
 
-`25teuo3ymrospc6b7l6lkaqmei3alnwwxcxglq36jtx72haz37fq.{gateway address}/12ZKO3hkXSeLwfr8tQIMIjYFtta4rmXDfkzv_RwZ38s`
+`e7p4qlwrskei4k6uphiwj2fl4lrtmeggcclhoznlhjee52kwmgia.{gateway address}/J9_ILtGSiI4r1HnRZOir4uM2EMYQlndlqzpITulWYZA`
 
 ## Arweave
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
