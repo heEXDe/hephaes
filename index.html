@@ -110,10 +110,6 @@
     }
     ol {text-align: left; padding-left: 20%; padding-right: 20%;}
     .tiles{
-      /*
-      display: grid;
-      grid-template-columns: repeat(3, 30%);
-      */
       display: flex;
       flex-wrap: wrap;
       margin-top: 5%;
@@ -130,11 +126,6 @@
       font-family: "Courier New", monospace;
       overflow-wrap: break-word;
     }
-    /*
-    @media (max-width: 1000px){.tiles{grid-template-columns: repeat(3, 30%);}}
-    @media (max-width: 500px){.tiles{grid-template-columns: repeat(2, 30%);}}
-    @media (max-width: 250px){.tiles{grid-template-columns: repeat(1, 30%);}}
-    */
   </style>
 </head>
 <body>
@@ -363,7 +354,7 @@ function awl(x){
     links.push(x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/"));
   }
   // displaying the links and adding the 'Copy' button
-  p2.innerHTML = links.join(' \n ') + "<br><button id=\"btnCopy\">Copy</button>";
+  p2.innerHTML = links.join('<br>')  + "<br><button id=\"btnCopy\">Copy</button>"
   // fn to copy the links to the OS clipboard
   document.getElementById('btnCopy').addEventListener('click', function(){navigator.clipboard.writeText(links.join(' \n '));});
 }
