@@ -44,6 +44,7 @@ How to construct an alternative address:
 `o2qshknlh6r7em42rrjwovmjlfgpcb7xjkcvirxkzv37ezpoggqq.{gateway address}/dqEjqas_o_IzmoxTZ1WJWUzxB_dKhVRG6s138mXuMaE`
 
 ## Arweave
+
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
 
 ## JavaScript libraries and frameworks used:
@@ -54,10 +55,12 @@ Copyright (C) 2013-2023 Jos de Jong wjosdejong@gmail.com. Licensed under the Apa
 Bootstrap (v5.3.2 ) - [https://getbootstrap.com/](https://getbootstrap.com/); (MIT license).
 
 ## Third party APIs used:
+
 Frankfurter API - [https://www.frankfurter.app/](https://www.frankfurter.app/) (MIT license)
 
 Open-Meteo API - [https://open-meteo.com/](https://open-meteo.com/) (AGPLv3 license; text in 'docs' folder); API data offered under [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 
 
 ## Licenses
+
 This software is licensed under the MIT license.
