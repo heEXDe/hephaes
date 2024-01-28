@@ -34,19 +34,20 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 ## Links - where to find the project
 
-[https://o2qshknlh6r7em42rrjwovmjlfgpcb7xjkcvirxkzv37ezpoggqq.arweave.net/dqEjqas_o_IzmoxTZ1WJWUzxB_dKhVRG6s138mXuMaE](https://o2qshknlh6r7em42rrjwovmjlfgpcb7xjkcvirxkzv37ezpoggqq.arweave.net/dqEjqas_o_IzmoxTZ1WJWUzxB_dKhVRG6s138mXuMaE)
+[https://axyafy5ervihilnygfokmwqurh6bhfl4hejlrfzoquq7tkgcnwfq.arweave.net/BfAC46SNUHQtuDFcploUifwTlXw5EriXLoUh-ajCbYs](https://axyafy5ervihilnygfokmwqurh6bhfl4hejlrfzoquq7tkgcnwfq.arweave.net/BfAC46SNUHQtuDFcploUifwTlXw5EriXLoUh-ajCbYs)
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 How to construct an alternative address:
 
-`o2qshknlh6r7em42rrjwovmjlfgpcb7xjkcvirxkzv37ezpoggqq.{gateway address}/dqEjqas_o_IzmoxTZ1WJWUzxB_dKhVRG6s138mXuMaE`
+`axyafy5ervihilnygfokmwqurh6bhfl4hejlrfzoquq7tkgcnwfq.{gateway address}/BfAC46SNUHQtuDFcploUifwTlXw5EriXLoUh-ajCbYs`
 
 ## Arweave
 
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
 
+## JavaScript libraries and frameworks used:
 ## JavaScript libraries and frameworks used:
 
 math.js (version 11.9.1) - [https://mathjs.org/](https://mathjs.org/)

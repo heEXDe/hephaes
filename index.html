@@ -325,7 +325,7 @@ function search(x){
 }
 // fn checking if a file on the Arweave network is accessible through gateways other than the one specified in the input link
 function agc(x){
-  let gates = ["ar-io.dev", "permagate.io", "vilenarios.com", "arbr.pro", "bobinstein.com"]
+  let gates = ["ar-io.dev", "permagate.io", "vilenarios.com", "arbr.pro", "wvm-gateway.xyz", "love4src.com", "gatewaypie.com"]
   async function isWebsiteAvailable(url) {
   try {
     const response = await fetch(url);
@@ -348,7 +348,7 @@ function agc(x){
 }
 // fn generating links to few alternative Arweave gateways, for the provided Arweave link
 function awl(x){
-  let gates = ["ar-io.dev", "permagate.io", "vilenarios.com", "love4src.com", "bobinstein.com", "arbr.pro"];
+  let gates = ["ar-io.dev", "permagate.io", "vilenarios.com", "arbr.pro", "wvm-gateway.xyz", "love4src.com", "gatewaypie.com"];
   let links = [];
   for(gate in gates){
     links.push(x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/"));
