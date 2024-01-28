@@ -47,7 +47,7 @@ How to construct an alternative address:
 
 What is Arweave: [https://www.arweave.org/](https://www.arweave.org/)
 
-## JavaScript libraries and frameworks used:
+
 ## JavaScript libraries and frameworks used:
 
 math.js (version 11.9.1) - [https://mathjs.org/](https://mathjs.org/)
