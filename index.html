@@ -9,6 +9,8 @@
   <!-- <link rel="stylesheet" href="https://bafybeiait6atbrur3zr3mdny3qed26kj2d2s5e5qbl2dqhxqojlxpxkg3q.ipfs.dweb.link/?filename=stylesheet.css" type="text/css" charset="utf-8"/> -->
   <!-- GitHub logo for the footer-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- for Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
     body {
         background-color: darkslategray;
@@ -108,10 +110,6 @@
     }
     ol {text-align: left; padding-left: 20%; padding-right: 20%;}
     .tiles{
-      /*
-      display: grid;
-      grid-template-columns: repeat(3, 30%);
-      */
       display: flex;
       flex-wrap: wrap;
       margin-top: 5%;
@@ -128,11 +126,6 @@
       font-family: "Courier New", monospace;
       overflow-wrap: break-word;
     }
-    /*
-    @media (max-width: 1000px){.tiles{grid-template-columns: repeat(3, 30%);}}
-    @media (max-width: 500px){.tiles{grid-template-columns: repeat(2, 30%);}}
-    @media (max-width: 250px){.tiles{grid-template-columns: repeat(1, 30%);}}
-    */
   </style>
 </head>
 <body>
@@ -154,6 +147,8 @@
           <i class="fa fa-github fa-3x"></i>
         </a>
       </footer>
+      <!-- for Bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       </body>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.1/math.js'></script>
 <script>
@@ -359,7 +354,7 @@ function awl(x){
     links.push(x.split(' ')[1].replace(/\.(.*)\//, "." + gates[gate] + "/"));
   }
   // displaying the links and adding the 'Copy' button
-  p2.innerHTML = links.join(' \n ') + "<br><button id=\"btnCopy\">Copy</button>";
+  p2.innerHTML = links.join('<br>')  + "<br><button id=\"btnCopy\">Copy</button>"
   // fn to copy the links to the OS clipboard
   document.getElementById('btnCopy').addEventListener('click', function(){navigator.clipboard.writeText(links.join(' \n '));});
 }
