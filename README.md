@@ -32,16 +32,14 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 - get few links to the alternative gateways, for the provided Arweave link
 - display link for your file using a working gateway
 
-## Links - where to find the project
-
-[https://axyafy5ervihilnygfokmwqurh6bhfl4hejlrfzoquq7tkgcnwfq.arweave.net/BfAC46SNUHQtuDFcploUifwTlXw5EriXLoUh-ajCbYs](https://axyafy5ervihilnygfokmwqurh6bhfl4hejlrfzoquq7tkgcnwfq.arweave.net/BfAC46SNUHQtuDFcploUifwTlXw5EriXLoUh-ajCbYs)
-
-Other gateways:
-[https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
+## Links - alternative gateways to the project
 
 How to construct an alternative address:
 
-`axyafy5ervihilnygfokmwqurh6bhfl4hejlrfzoquq7tkgcnwfq.{gateway address}/BfAC46SNUHQtuDFcploUifwTlXw5EriXLoUh-ajCbYs`
+`f7tvad4lxky2k2tocsxkqu5alllauuyhlsgi4piax2l5c33ja6ha.{gateway address}/L-dQD4u6saVqbhSuqFOgWtYKUwdcjI49AL6X0W9pB44`
+
+Other gateways:
+[https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
 
 ## Arweave
 
