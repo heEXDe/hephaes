@@ -27,7 +27,9 @@
   }
   h1{font-family: "silkscreennormal", "Courier New", monospace;}
   button{font-family: "Courier New", monospace;}
-  #theText{background-color: lightgray;}
+  #theText{background-color: gray;}
+  .footer {margin-top: 20%; margin-bottom: 5%;}
+  ::placeholder {color: white;}
   </style>
 </head>
 <body class="container-fluid bg-dark text-center text-bg-dark">
@@ -43,10 +45,10 @@
     </div>
       <div id="div_1" class="pt-3">
         <div id="divTitleElements">
-          <input id="theText" name="the-text" type="text" placeholder="Your question / command here ...">
+          <input id="theText" name="the-text" type="text" class="col-sm-6 text-center rounded-pill" placeholder="Your question / command here ...">
         <br id="b1">
         <div class="pt-3">
-          <button id="btnGo" class="btn btn-secondary">Go</button>
+          <button id="btnGo" type="button" class="btn btn-secondary col-sm-2">Go</button>
         </div>
         <div class="pt-5">
           <p id="p2"></p>
@@ -54,7 +56,7 @@
         </div>
       </div>
     </div>
-      <footer>
+      <footer class="footer">
         <a href="https://github.com/heEXDe/hephaes" target="_blank" class="text-bg-dark">
           <i class="fa fa-github fa-3x"></i>
         </a>
@@ -79,10 +81,21 @@ var p2 = document.getElementById("p2");
 var dTE = document.getElementById("divTitleElements");
 
 // content for 'how to use' and 'about' pages
-hHowToUseIt.innerHTML = "<h3>How to use it:</h3><br> <table id=\"infoTab\" class=\"table table-bordered table-hover table-dark\"><tr><td class=\"HowToHead\" rowspan=\"2\">Books</td><td>example: </td><td>book lord of the rings</td></tr><tr><td>to start searching for a book: </td><td>book</td></tr><tr><td class=\"HowToHead\" rowspan=\"13\">Mathematics</td><td>example: </td><td>= 2*3.12 + 11.5/1.34</td></tr><tr><td>to start with mathematics: </td><td>=</td></tr><tr><td>addition: </td><td>+</td></tr><tr><td>substraction: </td><td>-</td></tr>   <tr><td>multiplication: </td><td>*</td></tr><tr><td>division: </td><td>/</td></tr><tr><td>exponentiation: </td><td>^</td></tr><tr><td>n-th root: </d><td>^(1/n)</td></tr><tr><td>logarithm: </td><td>log(x) - natural log.<br>loga(b) - of 'b' to base 'a'</td></tr><tr><td>trigonometric functions: </td><td>sin([degrees] deg) <br> cos([degrees] deg) <br> tan([degrees] deg) <br> cot([degrees] deg)</td></tr><tr><td>derivative: </td><td>_derivative_[variable]_[function (no spaces)] <br> example: = derivative x x^4-x</td></tr><tr><td>factorial: </td><td>[number]! <br> example: = 9!</td></tr><tr><td>determinant of <br> a matrix: </td><td>det([num1A, ..., numNA; num1B, ..., numNB]) <br> example: = det([1, 4; 3, 1])</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Random password / <br> string generator</td><td>to generate a password / <br> string of the desired length: </td><td>random_[the length of the password]_sc(optional)<br>sc - special characters</td></tr><tr><td>example: </td><td>random 12<br>or<br>random 15 sc</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Currency converter</td><td>to convert currency A to B: </td><td>currency_[amount]_[A]_to_[B]</td></tr><tr><td>example: </td><td>currency 10 USD to EUR</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Unit converter</td><td>to convert unit A to B: <br> (m to in, ft, yd, mi) <br> (in to cm, m)<br> (kg to oz, lb)</td><td>unitconv_[A]_to_[B]<br>or<br>= [unit A] to [unit B]</td></tr><tr><td>example: </td><td>unitconv 5.5 m to in<br>or<br>= 150 lbs to kg</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Search engine</td><td>to search the web: </td><td>search_[the search]</td></tr><tr><td>example: </td><td>search USA population</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Weather</td><td>get the temperature, cloud <br> cover, and rain <br> for the indicated location <br> (geographic coordinate system)<br>for the current day: </td><td>weather_[latitude]_[longitude]</td></tr><tr><td>example: </td><td>weather 50.0 14.0</td></tr><tr><td class=\"HowToHead\" rowspan=\"2\">Arweave functionality</td><td>generate for your file <br> links to few alternative Aweave gateways: </td><td>awl_[original link to your file]</td></tr><tr><td>display link for your file <br> using a working gateway: </td><td>agc_[original link to your file]</td></tr></table>";
-/*
-aboutText.innerHTML = "<h3>About</h3><br><hr>Hephaes (from the Greek god of artisans, blacksmiths, carpenters, craftsmen, metallurgy, metalworking and sculpture - Hephaestus) is a multifunctional open source tool. Multifunctional? Yes, or at least that's the ultimate intent of the project. The number of available functions will grow over time.<br><hr><div class=\"row pt-5 gap-3 px-5\"><div class=\"col-lg-4 pt-5 border\"><p>open source: <br><a href=\"https://github.com/heEXDe/hephaes\" target=\"_blank\">GitHub</a></p></div><div class=\"col-lg-4 pt-5 border\"><p>Mathematics: <br> basic operations (addition, subtraction, multiplication, division, multiplication, roots, logarithms), trigonometric functions, calculate derivatives</p></div><div class=\"col-lg-4 pt-5 border\"><p>Books: <br> find search results by book titles in the Open Library (<a href=\"https://openlibrary.org/\"  target=\"_blank\">Open Library</a>) database</p></div><div class=\"col-lg-4 pt-5 border\"><p>Random generator: <br> generate a random string / password</p></div><div class=\"col-lg-4 pt-5 border\"><p>Currency converter: <br> convert one currency to the other</p></div><div class=\"col-lg-4 pt-5 border\"><p>Units of measure converter: <br> convert meters, inches and kilograms to pounds, inches, yards, miles, ounces and feet</p></div><div class=\"col-lg-4 pt-5 border\"><p>Search engine (redirection to Brave Search): <br> search the web using privacy preserving search engine - <a href=\"https://search.brave.com/\"  target=\"_blank\">Brave Search</a></p></div><div class=\"col-lg-4 pt-5 border\"><p>Weather: <br> get the temperature, cloud <br> cover, and rain <br> for the indicated location <br> (geographic coordinate system)</p></div><div class=\"col-lg-4 pt-5 border\"><p>Decentralized <br> file system <br> (Arweave): <br> 1. check gateways availability <br> 2. generate alternative links <br> for your file</p></div></div>";
-*/
+hHowToUseIt.innerHTML = `
+<h3>How to use it:</h3>
+<br>
+<div class=\"container-fluid pt-5 px-5\">
+  <table id=\"infoTab\" class=\"table table-bordered table-hover table-dark\">
+    <tr><td class=\"HowToHead\" rowspan=\"2\">Books</td><td>example: </td><td>book lord of the rings</td></tr><tr><td>to start searching for a book: </td><td>book</td></tr>
+    <tr><td class=\"HowToHead\" rowspan=\"13\">Mathematics</td><td>example: </td><td>= 2*3.12 + 11.5/1.34</td></tr><tr><td>to start with mathematics: </td><td>=</td></tr><tr><td>addition: </td><td>+</td></tr><tr><td>substraction: </td><td>-</td></tr>   <tr><td>multiplication: </td><td>*</td></tr><tr><td>division: </td><td>/</td></tr><tr><td>exponentiation: </td><td>^</td></tr><tr><td>n-th root: </d><td>^(1/n)</td></tr><tr><td>logarithm: </td><td>log(x) - natural log.<br>loga(b) - of 'b' to base 'a'</td></tr><tr><td>trigonometric functions: </td><td>sin([degrees] deg) <br> cos([degrees] deg) <br> tan([degrees] deg) <br> cot([degrees] deg)</td></tr><tr><td>derivative: </td><td>_derivative_[variable]_[function (no spaces)] <br> example: = derivative x x^4-x</td></tr><tr><td>factorial: </td><td>[number]! <br> example: = 9!</td></tr><tr><td>determinant of <br> a matrix: </td><td>det([num1A, ..., numNA; num1B, ..., numNB]) <br> example: = det([1, 4; 3, 1])</td></tr>
+    <tr><td class=\"HowToHead\" rowspan=\"2\">Random password / <br> string generator</td><td>to generate a password / <br> string of the desired length: </td><td>random_[the length of the password]_sc(optional)<br>sc - special characters</td></tr><tr><td>example: </td><td>random 12<br>or<br>random 15 sc</td></tr>
+    <tr><td class=\"HowToHead\" rowspan=\"2\">Currency converter</td><td>to convert currency A to B: </td><td>currency_[amount]_[A]_to_[B]</td></tr><tr><td>example: </td><td>currency 10 USD to EUR</td></tr>
+    <tr><td class=\"HowToHead\" rowspan=\"2\">Unit converter</td><td>to convert unit A to B: <br> (m to in, ft, yd, mi) <br> (in to cm, m)<br> (kg to oz, lb)</td><td>unitconv_[A]_to_[B]<br>or<br>= [unit A] to [unit B]</td></tr><tr><td>example: </td><td>unitconv 5.5 m to in<br>or<br>= 150 lbs to kg</td></tr>
+    <tr><td class=\"HowToHead\" rowspan=\"2\">Search engine</td><td>to search the web: </td><td>search_[the search]</td></tr><tr><td>example: </td><td>search USA population</td></tr>
+    <tr><td class=\"HowToHead\" rowspan=\"2\">Weather</td><td>get the temperature, cloud <br> cover, and rain <br> for the indicated location <br> (geographic coordinate system)<br>for the current day: </td><td>weather_[latitude]_[longitude]</td></tr><tr><td>example: </td><td>weather 50.0 14.0</td></tr>
+    <tr><td class=\"HowToHead\" rowspan=\"2\">Arweave functionality</td><td>generate for your file <br> links to few alternative Aweave gateways: </td><td>awl_[original link to your file]</td></tr><tr><td>display link for your file <br> using a working gateway: </td><td>agc_[original link to your file]</td></tr>
+    </table>
+  </div>`;
 
 aboutText.innerHTML = `
 <h3>About</h3>
