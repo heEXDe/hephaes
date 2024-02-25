@@ -45,13 +45,13 @@
     </div>
       <div id="div_1" class="pt-3">
         <div id="divTitleElements">
-          <input id="theText" name="the-text" type="text" class="col-sm-6 text-center rounded-pill" placeholder="Your question / command here ...">
+            <input id="theText" name="the-text" type="text" class="text-center col-sm-6 rounded-pill" style="height:50px" placeholder="Your question / command here ...">
         <br id="b1">
         <div class="pt-3">
           <button id="btnGo" type="button" class="btn btn-secondary col-sm-2">Go</button>
         </div>
         <div class="pt-5">
-          <p id="p2"></p>
+          <p id="p2" class="pt-5 pb-5"></p>
         </div>
         </div>
       </div>
@@ -74,11 +74,12 @@ document.getElementById('about').addEventListener('click', function(){ ch_page("
 document.getElementById('howToUse').addEventListener('click', function(){ ch_page("howToUse");});
 
 // get & create buttons
-var hHowToUseIt = document.createElement("p");
-var aboutText = document.createElement("p");
-var theText = document.getElementById("theText");
-var p2 = document.getElementById("p2");
-var dTE = document.getElementById("divTitleElements");
+const hHowToUseIt = document.createElement("p");
+const aboutText = document.createElement("p");
+const spanBtn = document.createElement('span');
+const theText = document.getElementById("theText");
+const p2 = document.getElementById("p2");
+const dTE = document.getElementById("divTitleElements");
 
 // content for 'how to use' and 'about' pages
 hHowToUseIt.innerHTML = `
@@ -155,7 +156,7 @@ Hephaes (from the Greek god of artisans, blacksmiths, carpenters, craftsmen, met
   </div>
 </div>`;
 
-// set id for elements
+// set attributes for elements
 hHowToUseIt.setAttribute("id", "hHowToUseIt");
 aboutText.setAttribute("id", "aboutText");
 
@@ -164,7 +165,6 @@ function ch_page(eleChoosen){
     case "title":
     while (div_1.firstChild) {div_1.removeChild(div_1.firstChild);};
     div_1.append(dTE);
-    document.getElementById("p2").className = "p2v1";
     p2.innerText = '';
     theText.value = '';
     break;
@@ -178,38 +178,65 @@ function ch_page(eleChoosen){
     break;
   }
 }
+
 // fn to choose the action to perform
 function chooseAction(text){
   text = text.split(' ').filter((a) => a !== "").join(' ');
+  function restoreDefBtn(){
+    while (document.getElementById('btnGo').firstChild) {document.getElementById('btnGo').removeChild(document.getElementById('btnGo').firstChild);};
+    document.getElementById('btnGo').disabled = false;
+    document.getElementById('btnGo').textContent = "Go";
+  }
   try{
-  document.getElementById("p2").className = "p2v2";
-  p2.innerHTML = 'Processing ...';
+    document.getElementById('btnGo').textContent = "";
+    spanBtn.className = "spinner-border spinner-border-sm";
+    document.getElementById('btnGo').appendChild(spanBtn);
+    document.getElementById('btnGo').appendChild(document.createTextNode(" Loading ... "));
+    document.getElementById('btnGo').disabled = true;
   if (text.charAt(0) == "="){
+    // calling the mathematics function
     mathematics(text);
+    restoreDefBtn();
   } else if (text.split(' ')[0] == "weather"){
+    // calling the weather function
     weather(text);
+    restoreDefBtn();
   } else if (text.split(' ')[0] == "book"){
+    // calling the book function
     book(text);
+    restoreDefBtn();
   } else if (text.split(' ')[0] == "random"){
+    // calling the random string function
     randomFn(text);
+    restoreDefBtn();
   } else if (text.split(' ')[0] == "currency"){
+    // calling the currency conversion function
     curConv(text);
+    restoreDefBtn();
   } else if(text.split(' ')[0] == "unitconv"){
+    // calling the unit conversion function
     uniConv(text);
+    restoreDefBtn();
   } else if(text.split(' ')[0] == "search"){
+    // calling the Brave search function
     search(text);
+    restoreDefBtn();
   } else if(text.split(' ')[0] == "agc"){
+    // calling the Arweave gateway checker function
     agc(text);
+    restoreDefBtn();
   } else if(text.split(' ')[0] == "awl"){
+    // calling the Arweave link function
     awl(text);
+    restoreDefBtn();
   } else {
     p2.innerHTML = 'Uncorrect command.';
   }
   } catch {p2.innerHTML = 'Error!';}
 }
+
 // fn to perform mathematical calculations
 function mathematics(x){
-  // document.getElementById("p2").className = "oneTile";
   switch (x.split(' ')[1]){
     case 'derivative':
       p2.innerHTML = math.derivative(x.split(' ')[3], x.split(' ')[2]);
@@ -222,7 +249,6 @@ function mathematics(x){
 function book(x){
   let a = x.slice(5).trim().replace(/\s/g, '%20');
   let url = `https://openlibrary.org/search.json?q=${x.slice(5).trim()}`;
-  // document.getElementById("p2").className = "oneTile";
   p2.innerHTML = "Results on the OpenLibrary website: <br>" + `<a href=\"https://openlibrary.org/search?q=${a}&mode=everything" target=\"_blank\" style=\"text-decoration:none\">https://openlibrary.org/search?q=${a}&mode=everything</a>`
 }
 // fn to get current weather - not working
@@ -258,12 +284,10 @@ function randomFn(x){
     result += 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.charAt(Math.floor(Math.random() * 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.length));
   };
   }
-  //document.getElementById("p2").className = "oneTile";
   p2.innerHTML = result;
 }
 // fn to convert one currency to another
 function curConv(x){
-  //document.getElementById("p2").className = "oneTile";
   //making a request to the API
   fetch(`https://api.frankfurter.app/latest?amount=${x.split(' ')[1]}&from=${x.split(' ')[2]}&to=${x.split(' ')[4]}`)
   .then((response) => response.json())
