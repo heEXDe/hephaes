@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/heEXDe/hephaes/main/img/hephaes-gui-02.png)
+![]()
 
 # Hephaes
 Hephaes - a multi-tool for finding information and making calculations. Hosted on Arweave network.
@@ -36,7 +36,7 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 How to construct an alternative address:
 
-`f7tvad4lxky2k2tocsxkqu5alllauuyhlsgi4piax2l5c33ja6ha.{gateway address}/L-dQD4u6saVqbhSuqFOgWtYKUwdcjI49AL6X0W9pB44`
+`aktxekddpetjot4goofdfzzj7p5zgjwiwfnzi57kgdqcdez4falq.{gateway address}/AqdyKGN5JpdPhnOKMucp-_uTJsixW5R36jDgIZM8KBc`
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
