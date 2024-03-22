@@ -87,14 +87,87 @@ hHowToUseIt.innerHTML = `
 <br>
 <div class=\"container-fluid pt-5 px-5\">
   <table id=\"infoTab\" class=\"table table-bordered table-hover table-dark\">
-    <tr><td class=\"HowToHead\" rowspan=\"2\">Books</td><td>example: </td><td>book lord of the rings</td></tr><tr><td>to start searching for a book: </td><td>book</td></tr>
-    <tr><td class=\"HowToHead\" rowspan=\"13\">Mathematics</td><td>example: </td><td>= 2*3.12 + 11.5/1.34</td></tr><tr><td>to start with mathematics: </td><td>=</td></tr><tr><td>addition: </td><td>+</td></tr><tr><td>substraction: </td><td>-</td></tr>   <tr><td>multiplication: </td><td>*</td></tr><tr><td>division: </td><td>/</td></tr><tr><td>exponentiation: </td><td>^</td></tr><tr><td>n-th root: </d><td>^(1/n)</td></tr><tr><td>logarithm: </td><td>log(x) - natural log.<br>loga(b) - of 'b' to base 'a'</td></tr><tr><td>trigonometric functions: </td><td>sin([degrees] deg) <br> cos([degrees] deg) <br> tan([degrees] deg) <br> cot([degrees] deg)</td></tr><tr><td>derivative: </td><td>_derivative_[variable]_[function (no spaces)] <br> example: = derivative x x^4-x</td></tr><tr><td>factorial: </td><td>[number]! <br> example: = 9!</td></tr><tr><td>determinant of <br> a matrix: </td><td>det([num1A, ..., numNA; num1B, ..., numNB]) <br> example: = det([1, 4; 3, 1])</td></tr>
-    <tr><td class=\"HowToHead\" rowspan=\"2\">Random password / <br> string generator</td><td>to generate a password / <br> string of the desired length: </td><td>random_[the length of the password]_sc(optional)<br>sc - special characters</td></tr><tr><td>example: </td><td>random 12<br>or<br>random 15 sc</td></tr>
-    <tr><td class=\"HowToHead\" rowspan=\"2\">Currency converter</td><td>to convert currency A to B: </td><td>currency_[amount]_[A]_to_[B]</td></tr><tr><td>example: </td><td>currency 10 USD to EUR</td></tr>
-    <tr><td class=\"HowToHead\" rowspan=\"2\">Unit converter</td><td>to convert unit A to B: <br> (m to in, ft, yd, mi) <br> (in to cm, m)<br> (kg to oz, lb)</td><td>unitconv_[A]_to_[B]<br>or<br>= [unit A] to [unit B]</td></tr><tr><td>example: </td><td>unitconv 5.5 m to in<br>or<br>= 150 lbs to kg</td></tr>
-    <tr><td class=\"HowToHead\" rowspan=\"2\">Search engine</td><td>to search the web: </td><td>search_[the search]</td></tr><tr><td>example: </td><td>search USA population</td></tr>
-    <tr><td class=\"HowToHead\" rowspan=\"2\">Weather</td><td>get the temperature, cloud <br> cover, and rain <br> for the indicated location <br> (geographic coordinate system)<br>for the current day: </td><td>weather_[latitude]_[longitude]</td></tr><tr><td>example: </td><td>weather 50.0 14.0</td></tr>
-    <tr><td class=\"HowToHead\" rowspan=\"2\">Arweave functionality</td><td>generate for your file <br> links to few alternative Aweave gateways: </td><td>awl_[original link to your file]</td></tr><tr><td>display link for your file <br> using a working gateway: </td><td>agc_[original link to your file]</td></tr>
+    <tr>
+      <td class=\"HowToHead\" rowspan=\"2\">Books</td><td>example: </td><td>book lord of the rings</td>
+      </tr>
+    <tr>
+      <td>to start searching for a book: </td><td>book</td>
+      </tr>
+    <tr>
+      <td class=\"HowToHead\" rowspan=\"13\">Mathematics</td><td>example: </td><td>= 2*3.12 + 11.5/1.34</td>
+      </tr>
+    <tr>
+      <td>to start with mathematics: </td><td>=</td>
+      </tr>
+    <tr>
+      <td>addition: </td><td>+</td>
+      </tr>
+    <tr>
+      <td>substraction: </td><td>-</td>
+      </tr>
+    <tr>
+      <td>multiplication: </td><td>*</td>
+      </tr>
+    <tr>
+      <td>division: </td><td>/</td>
+      </tr>
+    <tr>
+      <td>exponentiation: </td><td>^</td>
+      </tr>
+    <tr>
+      <td>n-th root: </d><td>^(1/n)</td>
+      </tr>
+    <tr>
+      <td>logarithm: </td><td>log(x) - natural log.<br>loga(b) - of 'b' to base 'a'</td>
+      </tr>
+    <tr>
+      <td>trigonometric functions: </td><td>sin([degrees] deg) <br> cos([degrees] deg) <br> tan([degrees] deg) <br> cot([degrees] deg)</td>
+      </tr>
+    <tr>
+      <td>derivative: </td><td>_derivative_[variable]_[function (no spaces)] <br> example: = derivative x x^4-x</td>
+      </tr>
+    <tr>
+      <td>factorial: </td><td>[number]! <br> example: = 9!</td>
+      </tr>
+    <tr>
+      <td>determinant of <br> a matrix: </td><td>det([num1A, ..., numNA; num1B, ..., numNB]) <br> example: = det([1, 4; 3, 1])</td>
+      </tr>
+    <tr>
+      <td class=\"HowToHead\" rowspan=\"2\">Random password / <br> string generator</td><td>to generate a password / <br> string of the desired length: </td><td>random_[the length of the password]_sc(optional)<br>sc - special characters</td>
+      </tr>
+    <tr>
+      <td>example: </td><td>random 12<br>or<br>random 15 sc</td>
+      </tr>
+    <tr>
+      <td class=\"HowToHead\" rowspan=\"2\">Currency converter</td><td>to convert currency A to B: </td><td>currency_[amount]_[A]_to_[B]</td>
+      </tr>
+    <tr>
+      <td>example: </td><td>currency 10 USD to EUR</td>
+      </tr>
+    <tr>
+      <td class=\"HowToHead\" rowspan=\"2\">Unit converter</td><td>to convert unit A to B: <br> (m to in, ft, yd, mi) <br> (in to cm, m)<br> (kg to oz, lb)</td><td>unitconv_[A]_to_[B]<br>or<br>= [unit A] to [unit B]</td>
+      </tr>
+    <tr>
+      <td>example: </td><td>unitconv 5.5 m to in<br>or<br>= 150 lbs to kg</td>
+      </tr>
+    <tr>
+      <td class=\"HowToHead\" rowspan=\"2\">Search engine</td><td>to search the web: </td><td>search_[the search]</td>
+      </tr>
+    <tr>
+      <td>example: </td><td>search USA population</td>
+      </tr>
+    <tr>
+      <td class=\"HowToHead\" rowspan=\"2\">Weather</td><td>get the temperature, cloud <br> cover, and rain <br> for the indicated location <br> (city name <br> or <br> geographic coordinate system)<br>for the current day: </td><td> weather_[city name] <br> weather_[latitude]_[longitude]</td>
+      </tr>
+    <tr>
+      <td>example: </td><td>weather Berlin <br> weather 50.0 14.0</td>
+      </tr>
+    <tr>
+      <td class=\"HowToHead\" rowspan=\"2\">Arweave functionality</td><td>generate for your file <br> links to few alternative Aweave gateways: </td><td>awl_[original link to your file]</td>
+      </tr>
+    <tr>
+      <td>display link for your file <br> using a working gateway: </td><td>agc_[original link to your file]</td>
+      </tr>
     </table>
   </div>`;
 
@@ -146,7 +219,7 @@ Hephaes (from the Greek god of artisans, blacksmiths, carpenters, craftsmen, met
   </div>
   <div class=\"card col-sm-4 mx-2 my-2 text-white bg-dark border-light\">
     <div class=\"card-body\">
-      <p>Weather: <br> get the temperature, cloud <br> cover, and rain <br> for the indicated location <br> (geographic coordinate system)</p>
+      <p>Weather: <br> get the temperature, cloud <br> cover, and rain <br> for the indicated location <br> (name of the city <br> or <br> geographic coordinate system)</p>
     </div>
   </div>
   <div class=\"card col-sm-4 mx-2 my-2 text-white bg-dark border-light\">
@@ -251,9 +324,11 @@ function book(x){
   let url = `https://openlibrary.org/search.json?q=${x.slice(5).trim()}`;
   p2.innerHTML = "Results on the OpenLibrary website: <br>" + `<a href=\"https://openlibrary.org/search?q=${a}&mode=everything" target=\"_blank\" style=\"text-decoration:none\">https://openlibrary.org/search?q=${a}&mode=everything</a>`
 }
-// fn to get current weather - not working
-function weather(x){ 
-  let url = `https://api.open-meteo.com/v1/forecast?latitude=${x.split(' ')[1]}&longitude=${x.split(' ')[2]}&hourly=temperature_2m,apparent_temperature,rain,cloud_cover&forecast_days=1`;
+// fn to get current weather
+function weather(x){
+
+  function weatherByGeoCor(a){
+    let url = `https://api.open-meteo.com/v1/forecast?latitude=${a.split(' ')[1]}&longitude=${a.split(' ')[2]}&hourly=temperature_2m,apparent_temperature,rain,cloud_cover&forecast_days=1`;
   //making a request to the API
   fetch(url)
   .then((response) => response.json())
@@ -268,9 +343,27 @@ function weather(x){
     </tr> `;}
     weatherStrTable = weatherStrTable + `</table><br><a href=\"https://open-meteo.com/\" target=\"_blank\">Weather data by Open-Meteo.com</a><br>(<a href=\"https://github.com/open-meteo/open-meteo/\" target=\"_blank\">GitHub</a>)`;
     p2.innerHTML = weatherStrTable;    
-    console.log(json)
+    // console.log(json)
   })
   .catch(function (error){console.error(`Error fetching data: ${error.message}`)});
+  }
+
+  // if geo coordinates are provided
+  if(/[0-9]/.test(x.split(' ')[1][0]) == true){weatherByGeoCor(x);}
+  // if city name is provided
+  if(/[a-zA-Z]/.test(x.split(' ')[1][0]) == true){
+    // constructing a proper url
+    let url = `https://geocoding-api.open-meteo.com/v1/search?name=${x.split(' ')[1]}&count=1&language=en&format=json`;
+    // making a request to the API to get a geo coordinates
+    fetch(url)
+    .then((response) => response.json())
+    .then((json) =>  {
+      // constructing an input for the weatherByGeo function that will contain geo coordinates
+      let b = `weather ${Number(json["results"][0]["latitude"].toFixed(2))} ${Number(json["results"][0]["longitude"].toFixed(2))}`;
+      weatherByGeoCor(b);
+    })
+  .catch(function (error){console.error(`Error fetching data: ${error.message}`)});
+  }
 }
 // fn to generate random string / password
 function randomFn(x){
