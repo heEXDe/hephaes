@@ -26,7 +26,7 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 - search the web using privacy preserving search engine - Brave Search
 
 7. Weather
-- get the temperature, cloud cover, and rain for the indicated location (geographic coordinate system) - data from open-meteo.com
+- get the temperature, cloud cover, and rain for the indicated location (city name or geographic coordinate system) - data from open-meteo.com
 
 8. Arweave functionality
 - get few links to the alternative gateways, for the provided Arweave link
