@@ -36,7 +36,7 @@ Hephaes - a multi-tool for finding information and making calculations. Hosted o
 
 How to construct an alternative address:
 
-`bwuofujlbpbaxwrmlmk4te2vh7vzs7gnuxa46pvv6apeer4hlndq.{gateway address}/Daji0SsLwgvaLFsVyZNVP-uZfM2lwc8-tfAeQkeHW0c`
+`yrgmjqlp5xbetra4o2kdx7n4iy3qagtbet56f4mxmrwfthi4z37a.{gateway address}/xEzEwW_twknEHHaUO_28RjcAGmEk--Lxl2RsWZ0czv4`
 
 Other gateways:
 [https://viewblock.io/arweave/gateways](https://viewblock.io/arweave/gateways)
