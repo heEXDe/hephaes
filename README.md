@@ -1,4 +1,4 @@
-![](https://github.com/heEXDe/hephaes/blob/main/img/hephaes-gui-25-02-2024.png?raw=true)
+![](https://raw.githubusercontent.com/heEXDe/hephaes/main/img/showcase-04-v2.gif)
 
 # Hephaes
 Hephaes - a multi-tool for finding information and making calculations. Hosted on Arweave network.
