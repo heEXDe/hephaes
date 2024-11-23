@@ -1,5 +1,7 @@
 ![](https://raw.githubusercontent.com/heEXDe/hephaes/main/img/showcase-04-v2.gif)
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/heEXDe/hephaes)
+
 # Hephaes
 Hephaes - a multi-tool for finding information and making calculations. Hosted on Arweave network.
 
